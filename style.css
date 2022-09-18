@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e2b3;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.menu {
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.menu-list {
+  text-align: center;
+}
+.menu-item {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.menu-item:last-child {
+  padding-bottom: 0px;
+}
+
+.menu-item__link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: font-weight 0.3s;
+  transition: font-size 0.3s;
+}
+
+.menu-item__link:hover {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.burger-menu {
+  /* position: absolute; */
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  display: none;
+  transform: rotate(45deg);
+  transition: rotate 1s ease-in-out;
+}
+
+.burger-menu svg {
+  height: 100px;
+  width: 100px;
+  margin: 25px;
+  display: flex;
+  fill: #ffffff;
+  stroke: #ffffff;
+  transform: rotate(-45deg);
+  transition: rotate 1s ease-in-out;
+}
+
+.burger-menu:hover {
+  color: #e5e2b3;
+  background-color: #ffffff;
+}
+
+.burger-menu svg:hover {
+  fill: #e5e2b3;
+  stroke: #e5e2b3;
+  transform: rotate(135deg);
+}
+
+.active {
+  display: flex;
+}
+
+.burger-menu__close {
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition: rotate 1s ease-in-out;
+  color: #e5e2b3;
+  background-color: #ffffff;
+}
+
+.burger-menu__close svg {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  display: flex;
+  fill: #e5e2b3;
+  stroke: #e5e2b3;
+  transform: rotate(135deg);
+  transition: rotate 1s ease-in-out;
+}
+
+.burger-menu__close:hover {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.burger-menu__close svg:hover {
+  fill: #ffffff;
+  stroke: #ffffff;
+  transform: rotate(-45deg);
+}
