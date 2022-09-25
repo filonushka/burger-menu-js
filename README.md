@@ -1,4 +1,4 @@
-# burger-menu-js
+## Burger-menu Component
 
 - [Deploy](https://filonushka.github.io/burger-menu-js/) 
 - Tech Stack: 
